@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ImageHero from "../assets/caixa.png";
-import { moontime } from "./layout";
+import { moontime } from "./fonts/font";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Correio Solidário",
