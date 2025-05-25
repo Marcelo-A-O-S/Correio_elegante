@@ -1,6 +1,6 @@
 import ImageLogo from '../assets/Logo carta.png';
 import Image from 'next/image';
-import { moontime } from '@/app/layout';
+import { moontime } from '@/app/fonts/font';
 export default function Navbar() {
     return (<>
         <nav className="bg-[#5271ff] w-full border-b-2">
