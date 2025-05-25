@@ -3,11 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import localFont from 'next/font/local';
-export const moontime = localFont({
-    src: './fonts/moontime-regular.ttf',
-    variable: '--font-moontime',
-    display: 'swap',
-})
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
