@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola.",
     images: [
       {
-        url: "../assets/caixa.png",
+        url: "https://github.com/Marcelo-A-O-S/Correio_elegante/blob/main/client/src/assets/caixa.png?raw=true",
         width: 800,
         height: 600,
         alt: "Correio Solidário Hero Image",
