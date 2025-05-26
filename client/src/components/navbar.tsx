@@ -1,6 +1,7 @@
 import ImageLogo from '../assets/Logo carta.png';
 import Image from 'next/image';
 import { moontime } from '@/app/fonts/font';
+import { Menu } from '@deemlol/next-icons';
 export default function Navbar() {
     return (<>
         <nav className="bg-[#5271ff] w-full border-b-2">
@@ -9,17 +10,21 @@ export default function Navbar() {
                     <Image src={ImageLogo} alt="Logo" className="h-10 w-12 mr-2 inline-block" />
                     <a href="/" className={`${moontime.className} text-4xl`}>Correio Solidario</a>
                 </div>
-                <ul className='flex items-center space-x-4 text-lg'>
+                <ul className='hidden sm:flex items-center space-x-4 text-lg'>
                     <li>
-                        <a href="/">Home</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="/about">Como vai funcionar</a>
+                        <a href="#funcionamento" >Regras</a>
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
+                        <a href="#criterios">Criterios</a>
+                    </li>
+                    <li>
+                        <a href="#participar">Participar</a>
                     </li>
                 </ul>
+                <Menu className='sm:hidden'/>
             </div>
         </nav>
 
