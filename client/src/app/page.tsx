@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="container mx-auto">
-        <section id="#" className="flex flex-col items-center w-full h-full p-4 ">
+        <section id="hero" className="flex flex-col items-center w-full h-full p-4 ">
           {/*flex flex-row-reverse items-center justify-between */}
           <div className="flex flex-col items-center sm:flex-row-reverse">
             <Image src={ImageHero} alt="Hero Image" className="h-full object-cover" />
@@ -38,7 +38,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="#funcionamento" className="flex flex-col items-center w-full h-full p-4">
+        <section id="funcionamento" className="flex flex-col items-center w-full h-full p-4">
           <div className="flex flex-col items-center sm:flex-row">
             <Image src={Manual} alt="Manual Image" className="h-full object-cover" />
             <div className="flex flex-col items-center">
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
           </div> 
         </section>
-        <section id="#criterios" className="flex flex-col items-center w-full h-full p-4">
+        <section id="criterios" className="flex flex-col items-center w-full h-full p-4">
           <div className="flex flex-col items-center sm:flex-row-reverse">
           <Image src={ImageChecklist} alt="Checklist Image" className="h-full object-cover" />
             <div>
@@ -59,7 +59,7 @@ export default function Home() {
           
           </div>
         </section>
-        <section id="#participar" className="flex flex-col items-center w-full h-full p-4">
+        <section id="participar" className="flex flex-col items-center w-full h-full p-4">
           <div className="flex flex-col items-center sm:flex-row">
             <Image src={Carta} alt="Logo Carta" className="h-full object-cover" />
             <div>

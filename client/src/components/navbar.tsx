@@ -16,7 +16,7 @@ export default function Navbar() {
                 </div>
                 <ul className='hidden sm:flex items-center space-x-4 text-lg'>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#hero">Home</a>
                     </li>
                     <li>
                         <a href="#funcionamento" >Regras</a>
