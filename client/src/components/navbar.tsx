@@ -1,8 +1,12 @@
+"use client";
 import ImageLogo from '../assets/Logo carta.png';
 import Image from 'next/image';
 import { moontime } from '@/app/fonts/font';
 import { Menu } from '@deemlol/next-icons';
+import { useState } from 'react';
+
 export default function Navbar() {
+    const [openMenu, setOpenMenu] = useState(false);
     return (<>
         <nav className="bg-[#5271ff] w-full border-b-2">
             <div className="container flex w-full justify-between items-center mx-auto px-4 py-2 text-white">
@@ -24,8 +28,13 @@ export default function Navbar() {
                         <a href="#participar">Participar</a>
                     </li>
                 </ul>
-                <Menu className='sm:hidden'/>
-                
+                <Menu className='sm:hidden' onClick={()=>setOpenMenu(!openMenu)} />
+            </div>
+            <div className={`${openMenu? "flex": "hidden"} flex-col`}>
+            <a className='block py-2 pl-3 pr-4' href="#">Home</a>
+            <a className='block py-2 pl-3 pr-4' href="#funcionamento" >Regras</a>
+            <a className='block py-2 pl-3 pr-4' href="#criterios">Criterios</a>
+            <a className='block py-2 pl-3 pr-4' href="#participar">Participar</a>
             </div>
         </nav>
 

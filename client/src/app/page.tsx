@@ -66,8 +66,8 @@ export default function Home() {
             <h1 className={`${moontime.className} text-7xl sm:text-8xl text-center`}>Como participar?</h1>
             <p className="text-xl">Participe utilizando a sua conta:</p>
             <div className="flex flex-col gap-2">
-              <ButtonAccount className="flex items-center justify-center gap-1"  >< Google/>Google</ButtonAccount>
-              <ButtonAccount className="flex items-center justify-center gap-1"  >< Facebook/>Facebook</ButtonAccount>
+              <ButtonAccount className="flex items-center justify-center gap-1 cursor-pointer"  >< Google/>Google</ButtonAccount>
+              <ButtonAccount className="flex items-center justify-center gap-1 cursor-pointer"  >< Facebook/>Facebook</ButtonAccount>
             </div>
             </div>
           </div>
