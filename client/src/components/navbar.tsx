@@ -31,10 +31,10 @@ export default function Navbar() {
                 <Menu className='sm:hidden' onClick={()=>setOpenMenu(!openMenu)} />
             </div>
             <div className={`${openMenu? "flex": "hidden"} flex-col`}>
-            <a className='block py-2 pl-3 pr-4' href="#">Home</a>
-            <a className='block py-2 pl-3 pr-4' href="#funcionamento" >Regras</a>
-            <a className='block py-2 pl-3 pr-4' href="#criterios">Criterios</a>
-            <a className='block py-2 pl-3 pr-4' href="#participar">Participar</a>
+            <a className='flex py-2 pl-3 pr-4' href="#hero">Home</a>
+            <a className='flex py-2 pl-3 pr-4' href="#funcionamento" >Regras</a>
+            <a className='flex py-2 pl-3 pr-4' href="#criterios">Criterios</a>
+            <a className='flex py-2 pl-3 pr-4' href="#participar">Participar</a>
             </div>
         </nav>
 
