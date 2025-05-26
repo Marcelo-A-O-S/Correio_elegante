@@ -25,6 +25,7 @@ export default function Navbar() {
                     </li>
                 </ul>
                 <Menu className='sm:hidden'/>
+                
             </div>
         </nav>
 

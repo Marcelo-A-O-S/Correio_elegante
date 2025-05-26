@@ -2,8 +2,7 @@ import Image from "next/image";
 import ImageHero from "../assets/caixa.png";
 import { moontime } from "./fonts/font";
 import { Metadata } from "next";
-import Link from "next/link";
-import ImageLogo from "../assets/Logo carta.png";
+import Manual from "../assets/manual.png";
 import { ButtonAccount } from "@/components/button-account";
 import { Google,Facebook } from "@deemlol/next-icons";
 import ImageChecklist from "../assets/Checklist.png";
@@ -26,8 +25,7 @@ export const metadata: Metadata = {
 }
 export default function Home() {
   return (
-    <div className="">
-      <main className="container mx-auto">
+    <main className="container mx-auto">
         <section id="#" className="flex flex-col items-center w-full h-full p-4 ">
           {/*flex flex-row-reverse items-center justify-between */}
           <div className="flex flex-col items-center sm:flex-row-reverse">
@@ -41,8 +39,12 @@ export default function Home() {
           </div>
         </section>
         <section id="#funcionamento" className="flex flex-col items-center w-full h-full p-4">
-          <div>
+          <div className="flex flex-col items-center sm:flex-row">
+            <Image src={Manual} alt="Manual Image" className="h-full object-cover" />
+            <div className="flex flex-col items-center">
             <h1 className={`${moontime.className} text-7xl sm:text-8xl text-center`}>Como vai funcionar?</h1>
+            
+            </div>
           </div> 
         </section>
         <section id="#criterios" className="flex flex-col items-center w-full h-full p-4">
@@ -70,19 +72,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
       </main>
-      <footer className="pt-16 pb-16 border-t-2 ">
-          <div className="mx-auto container sm:px-4 lg:px-8">
-            <div className="flex flex-col items-center">
-              <Link className="flex items-center" href={"/"}>
-              <Image src={ImageLogo} alt="Logo" className="h-10 w-12 mr-2 inline-block" />
-              <a href="/" className={`${moontime.className} text-4xl`}>Correio Solidario</a>
-              </Link>
-            </div>
-          </div>
-
-      </footer>
-    </div>
   );
 }
