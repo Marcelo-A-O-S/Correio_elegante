@@ -30,7 +30,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className="text-center py-4">
-                    <p className="text-sm">© 2023 Correio Solidário. Todos os direitos reservados.</p>
+                    <p className="text-sm">© 2025 Correio Solidário. Todos os direitos reservados.</p>
                     <p className="text-sm">Desenvolvido com carinho pela equipe do Gastão Valle.</p>
                 </div>
             </div>
