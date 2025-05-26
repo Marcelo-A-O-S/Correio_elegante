@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola.",
     images: [
       {
-        url: "https://correio-elegante-gastao.vercel.app/caixa.png",
+        url: "https://correio-elegante-gastao.vercel.app/2.jpg",
         width: 800,
         height: 600,
         alt: "Correio Solidário Hero Image",
@@ -43,7 +43,7 @@ export default function Home() {
             <Image src={Manual} alt="Manual Image" className="h-full object-cover" />
             <div className="flex flex-col items-center">
             <h1 className={`${moontime.className} text-7xl sm:text-8xl text-center`}>Como vai funcionar?</h1>
-            
+
             </div>
           </div> 
         </section>
