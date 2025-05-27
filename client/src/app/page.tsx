@@ -39,22 +39,29 @@ export default function Home() {
           </div>
         </section>
         <section id="funcionamento" className="flex flex-col items-center w-full h-full p-4">
-          <div className="flex flex-col items-center sm:flex-row">
+          <div className="flex flex-col items-center p-4 sm:flex-row">
             <Image src={Manual} alt="Manual Image" className="h-full object-cover" />
             <div className="flex flex-col items-center">
             <h1 className={`${moontime.className} text-7xl sm:text-8xl text-center`}>Como vai funcionar?</h1>
-
+            <div className="flex flex-col space-y-1 text-xl">
+            <p >Será disponibilizada uma caixa para o depósito de cartas coloridas.</p>
+            <p >Cada cor representa uma categoria: cartas do bem, de amizade ou de romance. Escolha a cor que melhor representa sua intenção.</p>
+            <p>Escreva sua carta e informe o destinatário. Não é necessário identificar o remetente.</p>
+            <p> Deposite sua carta na caixa — ela será entregue ao seu destino.</p>
+            </div>
             </div>
           </div> 
         </section>
         <section id="criterios" className="flex flex-col items-center w-full h-full p-4">
-          <div className="flex flex-col items-center sm:flex-row-reverse">
+          <div className="flex flex-col items-center p-4 sm:flex-row-reverse ">
           <Image src={ImageChecklist} alt="Checklist Image" className="h-full object-cover" />
             <div>
-            <h1 className={`${moontime.className} text-7xl sm:text-8xl text-center`}>Criterios para participar?</h1>
-            <p className="text-xl">Segue abaixo os criterios necessarios:</p>
-            <li className="text-xl">Ser aluno ou trabalhar no Gastao Valle</li>
-            <li className="text-xl">Estudar ou trabalhar no periodo Noturno no Gastao Valle</li>
+            <h1 className={`${moontime.className} text-7xl sm:text-8xl text-center`}>Quais os criterios para participar?</h1>
+            <p className="text-xl">Confira abaixo os critérios necessários:</p>
+            <ul className="list-disc">
+            <li className="text-xl">Ser aluno ou funcionário do Gastão Valle;</li>
+            <li className="text-xl">Estar vinculado ao período noturno da instituição (estudando ou trabalhando).</li>
+            </ul>
             </div>
           
           </div>
@@ -64,11 +71,7 @@ export default function Home() {
             <Image src={Carta} alt="Logo Carta" className="h-full object-cover" />
             <div>
             <h1 className={`${moontime.className} text-7xl sm:text-8xl text-center`}>Como participar?</h1>
-            <p className="text-xl">Participe utilizando a sua conta:</p>
-            <div className="flex flex-col gap-2">
-              <ButtonAccount className="flex items-center justify-center gap-1 cursor-pointer"  >< Google/>Google</ButtonAccount>
-              <ButtonAccount className="flex items-center justify-center gap-1 cursor-pointer"  >< Facebook/>Facebook</ButtonAccount>
-            </div>
+            <p className="text-xl">Escreva a sua carta e deposite na caixa!</p>
             </div>
           </div>
         </section>
