@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="flex flex-col items-center">
                     <Link className="flex items-center" href={"/"}>
                         <Image src={ImageLogo} alt="Logo" className="h-10 w-12 mr-2 inline-block" />
-                        <a href="/" className={`${moontime.className} text-4xl`}>Correio Solidario</a>
+                        <a href="/" className={`${moontime.className} text-4xl`}>Correio Elegante</a>
                     </Link>
                 </div>
                 <div className="flex flex-col items-center mt-4">

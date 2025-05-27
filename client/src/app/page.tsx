@@ -8,17 +8,17 @@ import { Google,Facebook } from "@deemlol/next-icons";
 import ImageChecklist from "../assets/Checklist.png";
 import Carta from "../assets/carta.png";
 export const metadata: Metadata = {
-  title: "Correio Solidário",
+  title: "Correio Elegante",
   description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola.",
   openGraph: {
-    title: "Correio Solidário",
+    title: "Correio Elegante",
     description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola.",
     images: [
       {
         url: "https://correio-elegante-gastao.vercel.app/2.jpg",
         width: 800,
         height: 600,
-        alt: "Correio Solidário Hero Image",
+        alt: "Correio Elegante Hero Image",
       },
     ],
   },
@@ -31,7 +31,7 @@ export default function Home() {
           <div className="flex flex-col items-center sm:flex-row-reverse">
             <Image src={ImageHero} alt="Hero Image" className="h-full object-cover" />
             <div className="flex flex-col">
-              <h1 className={` ${moontime.className} text-7xl sm:text-8xl text-center `}>Correio Solidario</h1>
+              <h1 className={` ${moontime.className} text-7xl sm:text-8xl text-center `}>Correio Elegante</h1>
               <p className="text-xl text-center mt-4">
                 Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola.
               </p>

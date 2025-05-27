@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className="container flex w-full justify-between items-center mx-auto px-4 py-2 text-white">
                 <div className='flex items-center'>
                     <Image src={ImageLogo} alt="Logo" className="h-10 w-12 mr-2 inline-block" />
-                    <a href="/" className={`${moontime.className} text-4xl`}>Correio Solidario</a>
+                    <a href="/" className={`${moontime.className} text-4xl`}>Correio Elegante</a>
                 </div>
                 <ul className='hidden sm:flex items-center space-x-4 text-lg'>
                     <li>
