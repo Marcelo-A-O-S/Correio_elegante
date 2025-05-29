@@ -37,6 +37,7 @@ export default function Navbar() {
             <a className='flex py-2 pl-3 pr-4' href="#hero">Home</a>
             <a className='flex py-2 pl-3 pr-4' href="#funcionamento" >Regras</a>
             <a className='flex py-2 pl-3 pr-4' href="#criterios">Criterios</a>
+            <a className='flex py-2 pl-3 pr-4' href="#realizacao">Realização</a>
             <a className='flex py-2 pl-3 pr-4' href="#participar">Participar</a>
             </div>
         </nav>
