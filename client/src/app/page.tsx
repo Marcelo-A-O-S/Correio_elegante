@@ -70,7 +70,7 @@ export default function Home() {
             <Image src={Calendario} alt="Logo Carta" className="h-full object-cover" />
             <div>
             <h1 className={`${moontime.className} text-7xl sm:text-8xl text-center`}>Data de realizacao?</h1>
-            <p className="text-xl">A dinâmica terá início na segunda feira, no dia <strong>02/05/2025</strong>. Prepare sua carta com carinho e surpreenda alguém que seja especial para você!!</p>
+            <p className="text-xl">A dinâmica terá início na segunda feira, no dia <strong>02/05/2025</strong> finalizando no dia <strong>12/05/2025</strong>. Prepare sua carta com carinho e surpreenda alguém que seja especial para você!!</p>
             </div>
           </div>
         </section>
