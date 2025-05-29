@@ -25,6 +25,9 @@ export default function Footer() {
                             <Link href="#criterios">Criterios</Link>
                         </li>
                         <li>
+                            <a href="#realizacao">Realização</a>
+                        </li>
+                        <li>
                             <Link href="#participar">Participar</Link>
                         </li>
                     </ul>

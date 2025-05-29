@@ -25,6 +25,9 @@ export default function Navbar() {
                         <a href="#criterios">Criterios</a>
                     </li>
                     <li>
+                        <a href="#realizacao">Realização</a>
+                    </li>
+                    <li>
                         <a href="#participar">Participar</a>
                     </li>
                 </ul>

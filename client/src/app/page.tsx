@@ -3,8 +3,7 @@ import ImageHero from "../assets/caixa.png";
 import { moontime } from "./fonts/font";
 import { Metadata } from "next";
 import Manual from "../assets/manual.png";
-import { ButtonAccount } from "@/components/button-account";
-import { Google,Facebook } from "@deemlol/next-icons";
+import Calendario from "../assets/calendario.png";
 import ImageChecklist from "../assets/Checklist.png";
 import Carta from "../assets/carta.png";
 export const metadata: Metadata = {
@@ -66,8 +65,17 @@ export default function Home() {
           
           </div>
         </section>
-        <section id="participar" className="flex flex-col items-center w-full h-full p-4">
+        <section id="realizacao" className="flex flex-col items-center w-full h-full p-4">
           <div className="flex flex-col items-center sm:flex-row">
+            <Image src={Calendario} alt="Logo Carta" className="h-full object-cover" />
+            <div>
+            <h1 className={`${moontime.className} text-7xl sm:text-8xl text-center`}>Data de realizacao?</h1>
+            <p className="text-xl">A dinâmica terá início na segunda feira, no dia <strong>02/05/2025</strong>. Prepare sua carta com carinho e surpreenda alguém que seja especial para você!!</p>
+            </div>
+          </div>
+        </section>
+        <section id="participar" className="flex flex-col items-center w-full h-full p-4">
+          <div className="flex flex-col items-center sm:flex-row-reverse">
             <Image src={Carta} alt="Logo Carta" className="h-full object-cover" />
             <div>
             <h1 className={`${moontime.className} text-7xl sm:text-8xl text-center`}>Como participar?</h1>
