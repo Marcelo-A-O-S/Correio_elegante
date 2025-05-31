@@ -70,7 +70,6 @@ export const metadata: Metadata = {
     siteName: "Correio Elegante",
     locale: 'pt_BR',
     title: "Correio Elegante",
-    url: "https://correio-elegante-gastao.vercel.app/",
     description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores na Escola Estadual Professor Gastão Valle.",
     images: [
       {
