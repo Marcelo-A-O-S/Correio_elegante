@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://correio-elegante-gastao.vercel.app
+
+# Sitemaps
+Sitemap: https://correio-elegante-gastao.vercel.app/sitemap.xml
