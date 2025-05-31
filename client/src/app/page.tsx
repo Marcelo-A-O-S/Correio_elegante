@@ -8,7 +8,7 @@ import ImageChecklist from "../assets/Checklist.png";
 import Carta from "../assets/carta.png";
 export const metadata: Metadata = {
   title: "Correio Elegante",
-  description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola.",
+  description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores na Escola Estadual Professor Gastão Valle.",
   authors:[{
     name: "Marcelo Augusto"
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Correio Elegante",
-    description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola.",
+    description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores na Escola Estadual Professor Gastão Valle.",
     images: [
       {
         url: "https://correio-elegante-gastao.vercel.app/2.jpg",
