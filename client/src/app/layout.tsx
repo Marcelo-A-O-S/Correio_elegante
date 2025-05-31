@@ -16,8 +16,27 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Correio Elegante",
-  description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola da escola do Gastão Valle.",
-};
+  description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola.",
+  authors:[{
+    name: "Marcelo Augusto"
+  },
+  {
+    name: "Daniel"
+  }
+  ],
+  openGraph: {
+    title: "Correio Elegante",
+    description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola.",
+    images: [
+      {
+        url: "https://correio-elegante-gastao.vercel.app/2.jpg",
+        width: 800,
+        height: 600,
+        alt: "Correio Elegante Hero Image",
+      },
+    ],
+  },
+}
 
 export default function RootLayout({
   children,

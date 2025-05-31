@@ -9,6 +9,13 @@ import Carta from "../assets/carta.png";
 export const metadata: Metadata = {
   title: "Correio Elegante",
   description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola.",
+  authors:[{
+    name: "Marcelo Augusto"
+  },
+  {
+    name: "Daniel"
+  }
+  ],
   openGraph: {
     title: "Correio Elegante",
     description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores da escola.",
