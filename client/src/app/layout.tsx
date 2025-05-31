@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Correio Elegante",
+  applicationName: "Correio Elegante",
   description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores na Escola Estadual Professor Gastão Valle.",
   authors:[{
     name: "Marcelo Augusto", url: 'https://github.com/Marcelo-A-O-S'
@@ -24,11 +25,34 @@ export const metadata: Metadata = {
     name: "Daniel"
   }
   ],
-  keywords:["Correio Elegante", "Escola Estadual Professor Gastão Valle", "Cartas", "Amizade", "Romance", "Carinho", "Correio Elegante no Gastão Valle", "Correio Elegante Gastão", "correio elegante", "correioelegantegastao", "Correio elegante"],
+  generator: 'Next.js',
+  robots: 'index, follow',
+  viewport: 'width=device-width, initial-scale=1',
+  keywords:
+  ["Correio Elegante",
+    "Escola Estadual Professor Gastão Valle", 
+    "Cartas", 
+    "Amizade", 
+    "Romance", 
+    "Carinho", 
+    "Correio Elegante no Gastão Valle", 
+    "Correio Elegante Gastão", 
+    "correio elegante", 
+    "correioelegantegastao", 
+    "Correio elegante",
+    "Correio Elegante na Escola Estadual Professor Gastão Valle", 
+  ],
+  alternates:{
+    canonical: "https://correio-elegante-gastao.vercel.app/",
+    languages:{
+      pt: "https://correio-elegante-gastao.vercel.app/",
+    }
+  },
   openGraph: {
     siteName: "Correio Elegante",
     locale: 'pt_BR',
     title: "Correio Elegante",
+    url: "https://correio-elegante-gastao.vercel.app/",
     description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores na Escola Estadual Professor Gastão Valle.",
     images: [
       {
@@ -43,7 +67,6 @@ export const metadata: Metadata = {
   category: 'education',
   creator: "Marcelo Augusto",
 }
-
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -10,14 +10,29 @@ export const metadata: Metadata = {
   title: "Correio Elegante",
   description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores na Escola Estadual Professor Gastão Valle.",
   authors:[{
-    name: "Marcelo Augusto"
+    name: "Marcelo Augusto", url: 'https://github.com/Marcelo-A-O-S'
   },
   {
     name: "Daniel"
   }
   ],
-  keywords:["Correio Elegante", "Escola Estadual Professor Gastão Valle", "Cartas", "Amizade", "Romance", "Carinho", "Correio Elegante no Gastão Valle", "Correio Elegante Gastão", "correio elegante", "correioelegantegastao", "Correio elegante"],
+  keywords:
+  ["Correio Elegante",
+    "Escola Estadual Professor Gastão Valle", 
+    "Cartas", 
+    "Amizade", 
+    "Romance", 
+    "Carinho", 
+    "Correio Elegante no Gastão Valle", 
+    "Correio Elegante Gastão", 
+    "correio elegante", 
+    "correioelegantegastao", 
+    "Correio elegante",
+    "Correio Elegante na Escola Estadual Professor Gastão Valle", 
+  ],
   openGraph: {
+    siteName: "Correio Elegante",
+    locale: 'pt_BR',
     title: "Correio Elegante",
     description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores na Escola Estadual Professor Gastão Valle.",
     images: [
@@ -28,7 +43,10 @@ export const metadata: Metadata = {
         alt: "Correio Elegante Hero Image",
       },
     ],
+    type: 'website',
   },
+  category: 'education',
+  creator: "Marcelo Augusto",
 }
 export default function Home() {
   return (
