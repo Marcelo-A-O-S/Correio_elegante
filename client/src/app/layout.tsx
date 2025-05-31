@@ -15,10 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Correio Elegante",
+  title: {
+    default: "Correio Elegante",
+    template: "%s | Correio Elegante Gastão Valle",
+  },
   applicationName: "Correio Elegante",
   description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores na Escola Estadual Professor Gastão Valle.",
-  authors:[{
+  authors: [{
     name: "Marcelo Augusto", url: 'https://github.com/Marcelo-A-O-S'
   },
   {
@@ -28,23 +31,36 @@ export const metadata: Metadata = {
   generator: 'Next.js',
   robots: 'index, follow',
   viewport: 'width=device-width, initial-scale=1',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+  },
+  referrer: 'origin-when-cross-origin',
   keywords:
-  ["Correio Elegante",
-    "Escola Estadual Professor Gastão Valle", 
-    "Cartas", 
-    "Amizade", 
-    "Romance", 
-    "Carinho", 
-    "Correio Elegante no Gastão Valle", 
-    "Correio Elegante Gastão", 
-    "correio elegante", 
-    "correioelegantegastao", 
-    "Correio elegante",
-    "Correio Elegante na Escola Estadual Professor Gastão Valle", 
-  ],
-  alternates:{
+    ['correio elegante',
+      'escola estadual professor gastão valle',
+      'cartas',
+      'amizade',
+      'romance',
+      'carinho',
+      'correio elegante gastão',
+      'correioelegantegastao',
+      'incentivo',
+      'correio elegante no gastão valle',
+      'correio elegante na escola estadual professor gastão valle',
+      'correio elegante gastão valle',
+      'correio elegante escola estadual professor gastão valle',
+      'correio elegante no colégio',
+      'correio elegante na escola',
+      "correio elegante noturno",
+      'noturno',
+      'correio elegante noturno gastão valle',
+      'correio elegante gastão noturno',
+      'correio elegante gastão valle noturno',
+    ],
+  alternates: {
     canonical: "https://correio-elegante-gastao.vercel.app/",
-    languages:{
+    languages: {
       pt: "https://correio-elegante-gastao.vercel.app/",
     }
   },
@@ -80,7 +96,7 @@ export default function RootLayout({
         <Analytics />
         <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
