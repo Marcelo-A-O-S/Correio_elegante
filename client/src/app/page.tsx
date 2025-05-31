@@ -6,48 +6,7 @@ import Manual from "../assets/manual.png";
 import Calendario from "../assets/calendario.png";
 import ImageChecklist from "../assets/Checklist.png";
 import Carta from "../assets/carta.png";
-export const metadata: Metadata = {
-  title: "Correio Elegante",
-  description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores na Escola Estadual Professor Gastão Valle.",
-  authors:[{
-    name: "Marcelo Augusto", url: 'https://github.com/Marcelo-A-O-S'
-  },
-  {
-    name: "Daniel"
-  }
-  ],
-  keywords:
-  ["Correio Elegante",
-    "Escola Estadual Professor Gastão Valle", 
-    "Cartas", 
-    "Amizade", 
-    "Romance", 
-    "Carinho", 
-    "Correio Elegante no Gastão Valle", 
-    "Correio Elegante Gastão", 
-    "correio elegante", 
-    "correioelegantegastao", 
-    "Correio elegante",
-    "Correio Elegante na Escola Estadual Professor Gastão Valle", 
-  ],
-  openGraph: {
-    siteName: "Correio Elegante",
-    locale: 'pt_BR',
-    title: "Correio Elegante",
-    description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores na Escola Estadual Professor Gastão Valle.",
-    images: [
-      {
-        url: "https://correio-elegante-gastao.vercel.app/2.jpg",
-        width: 800,
-        height: 600,
-        alt: "Correio Elegante Hero Image",
-      },
-    ],
-    type: 'website',
-  },
-  category: 'education',
-  creator: "Marcelo Augusto",
-}
+
 export default function Home() {
   return (
     <main className="container mx-auto">

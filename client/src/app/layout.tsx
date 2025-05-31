@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Head from "next/head";
 import { Analytics } from "@vercel/analytics/next"
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -90,9 +91,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <head>
+      <Head>
       <meta name="google-site-verification" content="Q65mQCs6BwMUrVYfGpq88PI_sJE5A40xSLusYRF6EGQ" />
-      </head>
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
