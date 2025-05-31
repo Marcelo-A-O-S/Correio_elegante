@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     name: "Daniel"
   }
   ],
+  keywords:["Correio Elegante", "Escola Estadual Professor Gastão Valle", "Cartas", "Amizade", "Romance", "Carinho", "Correio Elegante no Gastão Valle", "Correio Elegante Gastão", "correio elegante", "correioelegantegastao", "Correio elegante"],
   openGraph: {
     title: "Correio Elegante",
     description: "Espalhe carinho, admiração e um pouco de mistério pelos corredores na Escola Estadual Professor Gastão Valle.",
