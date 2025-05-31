@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://correio-elegante-gastao.vercel.app'),
   title: {
     default: "Correio Elegante",
     template: "%s | Correio Elegante Gastão Valle",
