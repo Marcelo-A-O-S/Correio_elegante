@@ -28,9 +28,9 @@ export default function Home() {
             <div className="flex flex-col items-center">
             <h1 className={`${moontime.className} text-7xl sm:text-8xl text-center`}>Como vai funcionar?</h1>
             <div className="flex flex-col space-y-1 text-xl">
-            <p >Será disponibilizada uma caixa para o depósito de cartas coloridas.</p>
+            <p >Será disponibilizada uma caixa na biblioteca para o depósito de cartas coloridas.</p>
             <p >Cada cor representa uma categoria: cartas do bem, de amizade ou de romance. Escolha a cor que melhor representa sua intenção.</p>
-            <p>Escreva sua carta e informe o destinatário. Não é necessário identificar o remetente.</p>
+            <p>Escreva sua carta e informe o destinatário e sala. Não é necessário identificar o remetente.</p>
             <p> Deposite sua carta na caixa — ela será entregue ao seu destino.</p>
             </div>
             </div>
