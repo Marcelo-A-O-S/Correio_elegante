@@ -34,7 +34,7 @@ export default function Footer() {
                 </div>
                 <div className="text-center py-4">
                     <p className="tex-t-center text-sm">© 2025 Correio Elegante. Todos os direitos reservados.</p>
-                    <p className="text-center text-sm">Desenvolvido com carinho pela equipe do Escola Estadual Professor Gastão Valle.</p>
+                    <p className="text-center text-sm">Desenvolvido com carinho pela equipe da Escola Estadual Professor Gastão Valle.</p>
                 </div>
             </div>
         </footer>
