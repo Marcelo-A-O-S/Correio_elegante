@@ -7,7 +7,7 @@ export interface Config{
     port:number
 }
 (async ()=>{
-    const portEnv: string = process.env.PORT as string
+    const portEnv: string = process.env.PORT || "5000";
     if (portEnv) {
         const portNumber = parseInt(portEnv);
         if (isNaN(portNumber)) {
