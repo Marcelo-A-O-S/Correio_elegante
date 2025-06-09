@@ -3,11 +3,11 @@ import { notFound } from "next/navigation";
 import CartaShow from "./CartaShow";
 interface CartaPageProps {
   params: Promise<{ id: string }>;
-  searchParams: { token?: string };
+  searchParams: Promise<{ token?: string }>;
 }
 export default async function CartaPage({ params, searchParams }: CartaPageProps) {
   const { id } = await params;
-  const { token } = searchParams;
+  const { token } = await searchParams;
 
   if (!token) {
     return notFound();
