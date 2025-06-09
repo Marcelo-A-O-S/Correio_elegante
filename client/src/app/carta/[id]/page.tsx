@@ -1,0 +1,22 @@
+import { getCartaByIdAndToken } from "@/repositories/cartaRepository";
+import { notFound } from "next/navigation";
+import CartaShow from "./CartaShow";
+interface CartaPageProps {
+  params: { id: string };
+  searchParams: { token?: string };
+}
+export default async function CartaPage({ params, searchParams }: CartaPageProps) {
+  const { id } = params;
+  const { token } = searchParams;
+
+  if (!token) {
+    return notFound();
+  }
+  const carta = await getCartaByIdAndToken(id, token);
+  if (!carta) return notFound();
+  return (<>
+    <main className="container mx-auto">
+      <CartaShow cartaCurrent={carta} initialTrechos={carta.trechos} />
+    </main>
+  </>)
+}

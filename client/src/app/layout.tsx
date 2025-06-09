@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/next"
+import Container from "@/components/container";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -32,7 +33,6 @@ export const metadata: Metadata = {
   ],
   generator: 'Next.js',
   robots: 'index, follow',
-  viewport: 'width=device-width, initial-scale=1',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
@@ -99,9 +99,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Analytics />
-        <Navbar />
+        <Container>
         {children}
-        <Footer />
+        </Container>
       </body>
     </html>
   );

@@ -13,15 +13,20 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
-
+enum TipoCarta {
+  BEM
+  INCENTIVO
+  ROMANCE
+  CARINHO
+}
 
 model Carta {
   id        String   @id @default(cuid())
-  title     String
   descricao String  //Uma descrição adicional para a carta
   destinatario String //Para quem vai ser enviado, tenho o intuito de usar o nome também para ficar ao lado do QR Code
   remetente String?
-  urlQrCode  String? //URL do QR Code gerado
+  tipo     TipoCarta //Tipo da carta, pode ser BEM, INCENTIVO, ROMANCE ou CARINHO
+  urlQrCode  String //URL do QR Code gerado
   token     String @unique //Token único para identificar a carta
   trechos  Trecho[]
 }
