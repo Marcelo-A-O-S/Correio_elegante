@@ -47,6 +47,7 @@ export default function CartaShow({ cartaCurrent, initialTrechos }: CartaShowPro
                     cursor={true}
                     repeat={Infinity}
                     className="text-center text-xl sm:text-2xl p-4"
+                    omitDeletionAnimation={true}
                 />
             ) : (
                 <p className="text-gray-500">Carregando...</p>
