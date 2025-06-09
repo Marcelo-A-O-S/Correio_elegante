@@ -1,8 +1,9 @@
 import { getCartaComTrechos } from "@/repositories/cartaRepository";
 import { NextRequest } from "next/server";
 
-export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
-  const { id } = params;
+export async function GET(request: NextRequest) {
+  const url = new URL(request.url);
+  const id = url.pathname.split("/").pop(); 
 
   const carta = await getCartaComTrechos(id);
 
