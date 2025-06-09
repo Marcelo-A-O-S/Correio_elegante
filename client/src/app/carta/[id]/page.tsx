@@ -2,11 +2,11 @@ import { getCartaByIdAndToken } from "@/repositories/cartaRepository";
 import { notFound } from "next/navigation";
 import CartaShow from "./CartaShow";
 interface CartaPageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
   searchParams: { token?: string };
 }
 export default async function CartaPage({ params, searchParams }: CartaPageProps) {
-  const { id } = params;
+  const { id } = await params;
   const { token } = searchParams;
 
   if (!token) {
