@@ -4,7 +4,7 @@ import { NextRequest } from "next/server";
 export async function GET(request: NextRequest) {
   const url = new URL(request.url);
   const id = url.pathname.split("/").pop(); 
-
+  if(!id) return new Response(JSON.stringify({ error: 'Id não informado' }), { status: 400 });
   const carta = await getCartaComTrechos(id);
 
   if (!carta) {
