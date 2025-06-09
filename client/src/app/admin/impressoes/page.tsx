@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { getCartaById, getCartaComTrechos, getCartas } from "@/repositories/cartaRepository"
 import QrPdfGenerator from "./qrcode-pdf";
 export default async function ImpressoesPage() {
