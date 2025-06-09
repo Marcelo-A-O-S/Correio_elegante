@@ -1,7 +1,11 @@
 import { getCartaById, getCartaComTrechos } from "@/repositories/cartaRepository"
 import TrechosEditor from "./TrechosEditor";
-
-export default async function TrechosPage({ params }: { params: { id: string } }) {
+type TrechosPageProps = {
+    params: {
+      id: string;
+    };
+  };
+export default async function TrechosPage({ params }: TrechosPageProps) {
     const carta = await getCartaComTrechos(params.id);
     if (!carta) return <div>Carta não encontrada</div>;
 
