@@ -11,9 +11,9 @@ const protectedRoutes = [
     '/api/admin',
     '/api/carta',
     '/api/logout',
-    '/admin/trechos'
-    '/admin/cartas'
-    '/admin/impressoes'
+    '/admin/trechos',
+    '/admin/cartas',
+    '/admin/impressoes',
 ]
 
 export async function middleware(req: NextRequest){
