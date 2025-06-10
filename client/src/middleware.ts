@@ -5,7 +5,6 @@ const protectedRoutes = [
     '/admin/dashboard',
     '/admin/create',
     '/api/hello',
-    '/api/carta',
     '/api/users',
     '/api/auth',
     '/api/admin',
@@ -14,6 +13,7 @@ const protectedRoutes = [
     '/admin/trechos',
     '/admin/cartas',
     '/admin/impressoes',
+    '/adimin/trechos/'
 ]
 
 export async function middleware(req: NextRequest){
