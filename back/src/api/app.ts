@@ -25,7 +25,18 @@ export class App{
     }
     private middleware(){
         console.log('Configurando middleware...');
-        this.server.use(cors());
+        const corsOptions = {
+            origin: [
+                'http://localhost:3000',
+                'https://localhost:3000',
+                // Add production domains when available
+                // 'https://yourdomain.com'
+            ],
+            methods: ['GET'],
+            credentials: true,
+            optionsSuccessStatus: 204
+        };
+        this.server.use(cors(corsOptions));
         this.server.use(bodyParser.json());
         console.log('Middleware configurado!');
     }
